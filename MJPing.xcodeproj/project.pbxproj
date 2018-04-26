@@ -13,6 +13,8 @@
 		069B95F82091E032009CEEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069B95F72091E032009CEEEF /* Assets.xcassets */; };
 		069B95FB2091E032009CEEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069B95F92091E032009CEEEF /* LaunchScreen.storyboard */; };
 		069B95FE2091E032009CEEEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B95FD2091E032009CEEEF /* main.m */; };
+		069B96072091E084009CEEEF /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B96062091E084009CEEEF /* SimplePing.m */; };
+		069B960A2091E0A0009CEEEF /* MJPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B96092091E0A0009CEEEF /* MJPing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		069B95FA2091E032009CEEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069B95FC2091E032009CEEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		069B95FD2091E032009CEEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		069B96052091E084009CEEEF /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		069B96062091E084009CEEEF /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		069B96082091E0A0009CEEEF /* MJPing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPing.h; sourceTree = "<group>"; };
+		069B96092091E0A0009CEEEF /* MJPing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		069B95ED2091E030009CEEEF /* MJPing */ = {
 			isa = PBXGroup;
 			children = (
+				069B96042091E084009CEEEF /* Classes */,
 				069B95EE2091E030009CEEEF /* AppDelegate.h */,
 				069B95EF2091E030009CEEEF /* AppDelegate.m */,
 				069B95F12091E031009CEEEF /* ViewController.h */,
@@ -70,6 +77,17 @@
 			);
 			path = MJPing;
 			sourceTree = "<group>";
+		};
+		069B96042091E084009CEEEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				069B96082091E0A0009CEEEF /* MJPing.h */,
+				069B96092091E0A0009CEEEF /* MJPing.m */,
+				069B96052091E084009CEEEF /* SimplePing.h */,
+				069B96062091E084009CEEEF /* SimplePing.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -141,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069B960A2091E0A0009CEEEF /* MJPing.m in Sources */,
 				069B95F32091E031009CEEEF /* ViewController.m in Sources */,
 				069B95FE2091E032009CEEEF /* main.m in Sources */,
 				069B95F02091E030009CEEEF /* AppDelegate.m in Sources */,
+				069B96072091E084009CEEEF /* SimplePing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJPing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJPing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
