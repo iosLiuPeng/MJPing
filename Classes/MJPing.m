@@ -39,6 +39,7 @@
 {
     self = [super init];
     if (self) {
+        _hostAddress = hostAddress;
         _pingMode = MJPingMode_Continuous;
         
         _pinger = [[SimplePing alloc] initWithHostName:hostAddress];
@@ -66,6 +67,7 @@
 {
     self = [super init];
     if (self) {
+        _hostAddress = hostAddress;
         _pingMode = MJPingMode_Interval;
         
         _pinger = [[SimplePing alloc] initWithHostName:hostAddress];

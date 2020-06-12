@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, MJPingMode) {
 @end
 
 @interface MJPing : NSObject
+@property (nonatomic, copy, readonly) NSString *hostAddress;/// 服务器地址
 @property (nonatomic, weak) id<MJPingDelegate> delegate;///< 代理
 
 /**
